@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lampada {
+  width: 450px; 
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+button {
+  text-decoration: none;
+  background-color: #0000ff;
+  color: #f0f8ff;
+  border: 0;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+  padding: 10px;
+  box-shadow: 10px 5px 5px black;
+  outline: none;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+
+button:active {
+  transition: 10s all;
+  background-color: rgba(0, 0, 0, 0.24);
+  transform: scale(0.98);
+            /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            /* Lowering the shadow */
+}
